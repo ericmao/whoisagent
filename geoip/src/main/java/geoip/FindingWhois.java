@@ -49,7 +49,7 @@ public class FindingWhois {
 			try{
 				bw2.write(ip+","+getCountry(ip)+"\n");
 			}catch(IOException e){
-				System.err.println(e);
+				continue;
 			}
 		}
 		bw.write("end\n");
